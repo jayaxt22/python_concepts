@@ -3,7 +3,7 @@ import calendar
 import time
 import random
 import math
-today= datetime.now()
+
 while True:
     ch=int(input("========WELCOME========\n1: press 1 for calender related calculations.\n2: press 2 fro clock related operations\nenter choice: "))
     match ch:
@@ -83,28 +83,51 @@ while True:
             print("2.Digital Clock ")
             print("3.Stopwatch")
             print("4.Countdown Timer")
-            print("5.Alarm Clock")
-            print("6.Time Difference")
-            print("7.World Clock")
-            print("8.Back")
+            print("5.Back")
             while True:
                 ch2=int(input("enter choice: "))
                 match ch2:
                     case 1:
+                        today = datetime.now()
                         print(today.time())
                     case 2:
-                        print()
+                        print("Digital Clock")
+
+                        try:
+                            while True:
+                              today = datetime.now()
+
+                              print(f"\r{today.strftime('%I:%M:%S %p')}", end="")
+
+                              time.sleep(1)
+
+                        except KeyboardInterrupt:
+                              print("\nClock Stopped")
                     case 3:
-                        press = input("press")
+                        input ("Press Enter to start the stopwatch...")
+                        start = time.time()
+                        try:
+                          while True:
+                             current = time.time()
+                             elapsed = int(current-start)
+                             hours = elapsed//3600
+                             remain =elapsed%3600
+                             minutes = remain//60
+                             seconds = remain%60
+                             print(f"\r{hours:02d}:{minutes:02d}:{seconds:02d}", end="  ")
+                             time.sleep(1)
+                        except KeyboardInterrupt:
+                             print("\nStopwatch Stopped")     
                     case 4:
-                        print("")
+                        print("Countdown Timer")
+                        second = int(input("enter the time in seconds:" ))
+                        while second:
+                            mins, secs = divmod(second, 60)
+                            timer = '{:02d}:{:02d}'.format(mins, secs)
+                            print(timer, end="\r")
+                            time.sleep(1)
+                            second -= 1
                     case 5:
-                        print("")
-                    case 6:
-                        print("")
-                    case 7:
-                        print("")
-                    case 8:
                         print("back to main menu")
                         break
                     case _:
