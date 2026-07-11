@@ -1,17 +1,16 @@
 from datetime import datetime
 import calendar
 import time
-import random
-import math
+
 
 while True:
     ch = int(input("""
 ╔══════════════════════════════════════╗
-║      📅⏰ DATE & TIME UTILITY                  ║
+║      📅⏰ DATE & TIME UTILITY                    ║
 ╠══════════════════════════════════════╣
-║ 1️⃣  Calendar Operations                                   ║
-║ 2️⃣  Clock Operations                                       ║
-║ 3️⃣  Exit                                                        ║
+║ 1️⃣  Calendar Operations                                        ║
+║ 2️⃣  Clock Operations                                            ║
+║ 3️⃣  Exit                                                             ║
 ╚══════════════════════════════════════╝
 👉 Enter Choice: """))
     match ch:
@@ -19,7 +18,7 @@ while True:
             print("\n📅 Calendar Operations Selected")
             print("""
 ╔══════════════════════════════════════╗
-║         📅 CALENDAR MENU                        ║
+║         📅 CALENDAR MENU                         ║
 ╚══════════════════════════════════════╝""")
             print("1.find the day of entered date.")
             print("2.✅ DATE VALIDATOR ")
@@ -37,28 +36,41 @@ while True:
                     case 1:
                         dnum = input("📅 Enter Date (DD/MM/YYYY): ")
                         d = datetime.strptime(dnum, "%d/%m/%Y")
+                        print("===================")
                         print("day is ", d)
+                        print("===================")
                     case 2:
                         print("✅ DATE VALIDATOR")
                         d2 = input("📅 Enter Date (DD/MM/YYYY): ")
                         try:
                             d = datetime.strptime(d2, "%d/%m/%Y")
+                            print("===================")
                             print("✅ Valid Date")
+                            print("===================")
                         except ValueError:
+                            print("===================")
                             print("❌ Invalid Date")
+                            print("===================")
                     case 3:
                         d1 = input("📅 First Date (DD/MM/YYYY): ")
                         d2 = input("📅 Second Date (DD/MM/YYYY): ")
                         d1 = datetime.strptime(d1, "%d/%m/%Y")
                         d2 = datetime.strptime(d2, "%d/%m/%Y")
                         diff = abs((d2 - d1).days)
+                        print("=============================")
                         print("📆 Days Between Dates:", diff)
+                        print("=============================")
                     case 4:
                         year = int(input("📅 Enter Year: "))
                         if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+                            print("=========================")
                             print(year, "✅ is a Leap Year.")
+                            print("=========================")
+
                         else:
+                            print("=============================")
                             print(year, "❌ is not a Leap Year.")
+                            print("=============================")
                     case 5:
                         birthdate = input("🎂 Enter Birth Date (DD/MM/YYYY): ")
                         birthdate = datetime.strptime(birthdate, "%d/%m/%Y")
@@ -66,12 +78,16 @@ while True:
                         age = today.year - birthdate.year - (
                             (today.month, today.day) < (birthdate.month, birthdate.day)
                         )
+                        print("===================")
                         print("🎉 Your Age:", age)
+                        print("===================")
                     case 6:
                         date_input = input("📅 Enter Date (DD/MM/YYYY): ")
-                        date_obj = datetime.strptime(date_input, "%d/%m/%Y")
-                        day_of_year = date_obj.timetuple().tm_yday
-                        print("📌 Day Number:", day_of_year)
+                        date_ob = datetime.strptime(date_input, "%d/%m/%Y")
+                        dofy = date_ob.timetuple().tm_yday
+                        print("=====================")
+                        print("📌 Day Number:", dofy)
+                        print("=====================")
                     case 7:
                         year = int(input("📅 Enter Year: "))
                         month = int(input("📅 Enter Month (1-12): "))
@@ -80,7 +96,9 @@ while True:
                         date_input = input("📅 Enter Date (DD/MM/YYYY): ")
                         date_obj = datetime.strptime(date_input, "%d/%m/%Y")
                         week_number = date_obj.isocalendar()[1]
+                        print("==============================")
                         print("📅 Week Number:", week_number)
+                        print("==============================")
                     case 9:
                         print("🔙 Returning to Main Menu...")
                         break
@@ -90,11 +108,11 @@ while True:
             print("\n⏰ Clock Operations Selected")
             print("""
 ╔══════════════════════════════════════╗
-║           ⏰ CLOCK MENU                         ║
+║           ⏰ CLOCK MENU                          ║
 ╚══════════════════════════════════════╝""")
             print("1.🕒 Current Time")
             print("2.🕒 Digital Clock ")
-            print("3.Stopwatch")
+            print("3.⏳ Stopwatch")
             print("4.⏳ Countdown Timer")
             print("5.Back")
             while True:
@@ -113,8 +131,9 @@ while True:
                         except KeyboardInterrupt:
                             print("\n🛑 Clock Stopped")
                     case 3:
-                        input("⏱️ Press Enter to Start Stopwatch...")
+                        input("⏳ Press Enter to Start Stopwatch...")
                         start = time.time()
+                        print("=============================")
                         try:
                             while True:
                                 current = time.time()
@@ -127,6 +146,7 @@ while True:
                                 time.sleep(1)
                         except KeyboardInterrupt:
                             print("\n🛑 Stopwatch Stopped")
+                            print("========================")
                     case 4:
                         print("⏳ Countdown Timer")
                         second = int(input("⏳ Enter Time (seconds): "))
