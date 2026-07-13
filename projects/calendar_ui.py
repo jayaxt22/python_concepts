@@ -6,11 +6,11 @@ import time
 while True:
     ch = int(input("""
 ╔══════════════════════════════════════╗
-║      📅⏰ DATE & TIME UTILITY                    ║
+║      📅⏰ DATE & TIME UTILITY             ║
 ╠══════════════════════════════════════╣
-║ 1️⃣  Calendar Operations                                        ║
-║ 2️⃣  Clock Operations                                            ║
-║ 3️⃣  Exit                                                             ║
+║1️⃣  Calendar Operations                                 ║
+║2️⃣  Clock Operations                                    ║
+║3️⃣  Exit                                                    ║
 ╚══════════════════════════════════════╝
 👉 Enter Choice: """))
     match ch:
@@ -37,7 +37,7 @@ while True:
                         dnum = input("📅 Enter Date (DD/MM/YYYY): ")
                         d = datetime.strptime(dnum, "%d/%m/%Y")
                         print("===================")
-                        print("day is ", d)
+                        print("day is ", d.strftime("%A"))
                         print("===================")
                     case 2:
                         print("✅ DATE VALIDATOR")
@@ -108,8 +108,9 @@ while True:
             print("\n⏰ Clock Operations Selected")
             print("""
 ╔══════════════════════════════════════╗
-║           ⏰ CLOCK MENU                          ║
-╚══════════════════════════════════════╝""")
+║           ⏰ CLOCK MENU              ║
+╚══════════════════════════════════════╝
+                  """)
             print("1.🕒 Current Time")
             print("2.🕒 Digital Clock ")
             print("3.⏳ Stopwatch")
