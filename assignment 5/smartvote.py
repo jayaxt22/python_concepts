@@ -9,4 +9,4 @@ if age >= 18:
     else:
         print("not allowed to vote without id proof")
 else:
-    print("you are not eligible to vote.")        
+    print("you are not eligible to vote")        

@@ -35,10 +35,10 @@ while True:
                     destination = input("enter the destination: ")
                     travel_class = input("enter class type(general/AC/sleeper): ")
                     dist = int(input("enter distance in km: "))
-
+                    travel_class.lower()
                     if dist > 0 and dist <= 100 and travel_class == "general":
                         fare = dist * 5
-                    elif dist > 0 and dist <= 100 and travel_class == "AC":
+                    elif dist > 0 and dist <= 100 and travel_class == "ac":
                         fare = dist * 10
                     elif dist > 0 and dist <= 100 and travel_class == "sleeper":
                         print("🛌 for distance under 100km sleeper is not available")
@@ -48,13 +48,13 @@ while True:
                         fare = dist * 5
                     elif dist > 100 and dist <= 500 and travel_class == "sleeper":
                         fare = dist * 10
-                    elif dist > 100 and dist <= 500 and travel_class == "AC":
+                    elif dist > 100 and dist <= 500 and travel_class == "ac":
                         fare = dist * 15
                     elif dist > 500 and travel_class == "general":
                         fare = dist * 4
                     elif dist > 500 and travel_class == "sleeper":
                         fare = dist * 9
-                    elif dist > 500 and travel_class == "AC":
+                    elif dist > 500 and travel_class == "ac":
                         fare = dist * 15
                     else:
                         print("⚠️ invalid distance or class, fare set to default")
@@ -110,10 +110,11 @@ while True:
         case 4:
             dist = int(input("enter distance in km: "))
             category = input("enter class type(general/AC/sleeper): ")
+            category.lower()
             if dist > 0:
                 if dist <= 100 and category == "general":
                     print("💰 ticket price:", dist * 5, "rupees")
-                elif dist <= 100 and category == "AC":
+                elif dist <= 100 and category == "ac":
                     print("💰 ticket price:", dist * 10, "rupees")
                 elif dist <= 100 and category == "sleeper":
                     print("🛌 for distance under 100km sleeper category is not available")
@@ -123,13 +124,13 @@ while True:
                     print("💰 ticket price:", dist * 5, "rupees")
                 elif dist > 100 and dist <= 500 and category == "sleeper":
                     print("💰 ticket price:", dist * 10, "rupees")
-                elif dist > 100 and dist <= 500 and category == "AC":
+                elif dist > 100 and dist <= 500 and category == "ac":
                     print("💰 ticket price:", dist * 15, "rupees")
                 elif dist > 500 and category == "general":
                     print("💰 ticket price:", dist * 4, "rupees")
                 elif dist > 500 and category == "sleeper":
                     print("💰 ticket price:", dist * 9, "rupees")
-                elif dist > 500 and category == "AC":
+                elif dist > 500 and category == "ac":
                     print("💰 ticket price:", dist * 15, "rupees")
                 else:
                     print("⚠️ invalid class type entered")
