@@ -1,0 +1,446 @@
+Assignment 1 — Age Calculator
+
+Create a program that accepts the user's date of birth and calculates:
+
+Current age in years
+Completed months
+Total number of days lived
+Next birthday date
+Number of days remaining for the next birthday
+
+Input:
+
+Enter DOB (DD-MM-YYYY): 15-08-1998
+
+Expected Output:
+
+Age: 28 years
+Total Days Lived: XXXXX days
+Next Birthday: 15-08-2027
+Days Remaining: XX days
+
+
+2.
+ Employee Joining & Experience System
+
+Create an employee experience calculator.
+
+Read:
+
+Employee name
+Joining date
+Current date
+
+Calculate:
+
+Total days worked
+Total years worked
+Total months approximately
+Experience in Years Months Days
+Whether employee has completed 1 year
+Whether employee has completed 5 years
+
+Example:
+
+Enter employee name: Rahul
+Enter joining date: 10-06-2021
+Enter current date: 10-09-2026
+
+Output:
+
+Employee: Rahul
+Joining Date: 10-06-2021
+Experience: 5 Years 3 Months 0 Days
+Total Days Worked: 1918
+5 Years Completed: Yes
+
+
+Assignment 3 — Date Difference Calculator
+
+Create a program that accepts two dates and displays:
+
+Enter first date: 10-09-2026
+Enter second date: 25-12-2026
+
+Display:
+
+Difference in days
+Difference in weeks
+Difference in hours
+Difference in minutes
+
+Example:
+
+Days Difference: 106
+Weeks Difference: 15
+Hours Difference: 2544
+Minutes Difference: 152640
+
+
+Assignment 4 – Menu-Driven Future Date Calculator
+
+Develop a menu-driven Python program using the datetime module to calculate a future date.
+
+The program should allow the user to add days, weeks, hours, or minutes to a given date/time.
+
+Use timedelta for all date and time calculations.
+
+Menu
+========== FUTURE DATE CALCULATOR ==========
+
+1. Add Days
+2. Add Weeks
+3. Add Hours
+4. Add Minutes
+5. Exit
+
+Enter your choice:
+Case 1 – Add Days
+
+Read:
+
+Starting date
+Number of days
+Input
+Enter your choice: 1
+
+Enter starting date (DD-MM-YYYY): 10-09-2026
+Enter number of days to add: 100
+Output
+Starting Date : 10-09-2026
+Days Added    : 100
+Future Date   : 19-12-2026
+Case 2 – Add Weeks
+
+Read:
+
+Starting date
+Number of weeks
+Input
+Enter your choice: 2
+
+Enter starting date (DD-MM-YYYY): 10-09-2026
+Enter number of weeks to add: 4
+Output
+Starting Date : 10-09-2026
+Weeks Added   : 4
+Future Date   : 08-10-2026
+Case 3 – Add Hours
+
+For this case, the student should take date and time as input.
+
+Input
+Enter your choice: 3
+
+Enter date and time (DD-MM-YYYY HH:MM): 10-09-2026 10:30
+Enter number of hours to add: 15
+Output
+Starting Date & Time : 10-09-2026 10:30
+Hours Added          : 15
+Future Date & Time   : 11-09-2026 01:30
+
+This case should test whether students understand that adding hours can change the date.
+
+Case 4 – Add Minutes
+
+Take date/time and number of minutes.
+
+Input
+Enter your choice: 4
+
+Enter date and time (DD-MM-YYYY HH:MM): 10-09-2026 23:30
+Enter number of minutes to add: 90
+Output
+Starting Date & Time : 10-09-2026 23:30
+Minutes Added        : 90
+Future Date & Time   : 11-09-2026 01:00
+
+Students must correctly handle the change from 10 September → 11 September.
+
+Case 5 – Exit
+Enter your choice: 5
+
+Thank you for using Future Date Calculator!
+Complete Sample Run
+========== FUTURE DATE CALCULATOR ==========
+
+1. Add Days
+2. Add Weeks
+3. Add Hours
+4. Add Minutes
+5. Exit
+
+Enter your choice: 1
+
+Enter starting date (DD-MM-YYYY): 25-12-2026
+Enter number of days to add: 15
+
+Starting Date : 25-12-2026
+Days Added    : 15
+Future Date   : 09-01-2027
+
+
+========== FUTURE DATE CALCULATOR ==========
+
+1. Add Days
+2. Add Weeks
+3. Add Hours
+4. Add Minutes
+5. Exit
+
+Enter your choice: 4
+
+Enter date and time (DD-MM-YYYY HH:MM): 31-12-2026 23:30
+Enter number of minutes to add: 90
+
+Starting Date & Time : 31-12-2026 23:30
+Minutes Added        : 90
+Future Date & Time   : 01-01-2027 01:00
+
+
+========== FUTURE DATE CALCULATOR ==========
+
+1. Add Days
+2. Add Weeks
+3. Add Hours
+4. Add Minutes
+5. Exit
+
+Enter your choice: 5
+
+Thank you for using Future Date Calculator!
+
+
+
+
+
+ASSIGNMENT 5 – MENU-DRIVEN PAST DATE & TIME CALCULATOR
+
+
+Create a menu-driven Python program that allows the user to calculate a date/time in the past by subtracting days, weeks, hours, or minutes.
+
+Menu
+========== PAST DATE & TIME CALCULATOR ==========
+
+1. Subtract Days
+2. Subtract Weeks
+3. Subtract Hours
+4. Subtract Minutes
+5. Exit
+
+Enter your choice:
+CASE 1 – Subtract Days
+Input
+Enter your choice: 1
+
+Enter starting date (DD-MM-YYYY): 10-09-2026
+Enter number of days to subtract: 100
+Output
+Starting Date : 10-09-2026
+Days Subtracted : 100
+Past Date : 02-06-2026
+CASE 2 – Subtract Weeks
+Input
+Enter your choice: 2
+
+Enter starting date (DD-MM-YYYY): 10-09-2026
+Enter number of weeks to subtract: 6
+Output
+Starting Date : 10-09-2026
+Weeks Subtracted : 6
+Past Date : 30-07-2026
+CASE 3 – Subtract Hours
+
+Here the student must read both date and time.
+
+Input
+Enter your choice: 3
+
+Enter date and time (DD-MM-YYYY HH:MM): 10-09-2026 10:30
+Enter number of hours to subtract: 15
+Output
+Starting Date & Time : 10-09-2026 10:30
+Hours Subtracted     : 15
+Past Date & Time     : 09-09-2026 19:30
+CASE 4 – Subtract Minutes
+Input
+Enter your choice: 4
+
+Enter date and time (DD-MM-YYYY HH:MM): 10-09-2026 01:00
+Enter number of minutes to subtract: 90
+Output
+Starting Date & Time : 10-09-2026 01:00
+Minutes Subtracted   : 90
+Past Date & Time     : 09-09-2026 23:30
+CASE 5 – Exit
+Enter your choice: 5
+
+Thank you for using Past Date & Time Calculator!
+
+
+
+
+ASSIGNMENT 6 – EMPLOYEE WORKING DATE & DEADLINE CALCULATOR
+
+You are developing a small HR/Project Management utility.
+
+The HR department wants to calculate important dates related to an employee or project.
+
+Create a menu-driven program that provides the following operations:
+
+========== EMPLOYEE & PROJECT DATE CALCULATOR ==========
+
+1. Calculate Probation End Date
+2. Calculate Project Deadline
+3. Calculate Notice Period End Date
+4. Calculate Days Remaining for Deadline
+5. Check Employee Work Anniversary
+6. Exit
+
+Enter your choice:
+CASE 1 – Calculate Probation End Date
+
+An employee joins an organization on a particular date.
+
+The company has a probation period of a specified number of months/days.
+
+For this assignment, take probation period in days.
+
+Input
+Enter your choice: 1
+
+Enter employee joining date (DD-MM-YYYY): 15-07-2026
+Enter probation period in days: 90
+Output
+Joining Date       : 15-07-2026
+Probation Period   : 90 days
+Probation End Date : 13-10-2026
+
+Students should use:
+
+timedelta(days=...)
+CASE 2 – Calculate Project Deadline
+
+A software company starts a project on a particular date.
+
+The project manager gives a deadline in terms of number of days.
+
+Calculate the final deadline.
+
+Input
+Enter your choice: 2
+
+Enter project start date (DD-MM-YYYY): 10-09-2026
+Enter project duration in days: 120
+Output
+Project Start Date : 10-09-2026
+Project Duration   : 120 days
+Project Deadline   : 08-01-2027
+Important
+
+The program must correctly handle:
+
+Month changes
+Year changes
+Leap years
+
+Students should not manually calculate these.
+
+CASE 3 – Calculate Notice Period End Date
+
+An employee resigns from a company.
+
+The employee's notice period is given in days.
+
+Calculate the date on which the notice period ends.
+
+Input
+Enter your choice: 3
+
+Enter resignation date (DD-MM-YYYY): 20-09-2026
+Enter notice period in days: 60
+Output
+Resignation Date : 20-09-2026
+Notice Period    : 60 days
+Last Working Date: 19-11-2026
+Additional Test
+
+Students should test:
+
+Resignation Date : 15-12-2026
+Notice Period    : 60 days
+
+The program must correctly move into 2027.
+
+CASE 4 – Calculate Days Remaining for Deadline
+
+A project has a deadline.
+
+The program should take:
+
+Current date
+Project deadline
+
+and calculate how many days are remaining.
+
+Input
+Enter your choice: 4
+
+Enter current date (DD-MM-YYYY): 10-09-2026
+Enter project deadline (DD-MM-YYYY): 25-09-2026
+Output
+Current Date     : 10-09-2026
+Project Deadline : 25-09-2026
+Days Remaining   : 15 days
+If deadline has already passed
+
+Input:
+
+Enter current date (DD-MM-YYYY): 10-09-2026
+Enter project deadline (DD-MM-YYYY): 01-09-2026
+
+Output:
+
+Current Date     : 10-09-2026
+Project Deadline : 01-09-2026
+Deadline Status  : Deadline has already passed
+Days Overdue     : 9 days
+CASE 5 – Check Employee Work Anniversary
+
+The HR department wants to check whether an employee's work anniversary is today.
+
+Take:
+
+Employee joining date
+Current date
+Input
+Enter your choice: 5
+
+Enter employee joining date (DD-MM-YYYY): 10-09-2020
+Enter current date (DD-MM-YYYY): 10-09-2026
+Output
+Joining Date : 10-09-2020
+Current Date : 10-09-2026
+
+Work Anniversary: YES
+Completed Years  : 6 years
+If anniversary is not today
+
+Input:
+
+Enter your choice: 5
+
+Enter employee joining date (DD-MM-YYYY): 15-05-2022
+Enter current date (DD-MM-YYYY): 10-09-2026
+
+Output:
+
+Joining Date : 15-05-2022
+Current Date : 10-09-2026
+
+Work Anniversary: NO
+Completed Years  : 4 years
+CASE 6 – Exit
+Enter your choice: 6
+
+Thank you for using Employee & Project Date Calculator!

@@ -1,0 +1,353 @@
+Assignment 1: Student Result Calculator
+
+ A school wants to calculate the total marks and percentage of a student.
+
+Create a class Student with the following attributes:
+
+Student name
+
+Roll number
+
+Marks in English
+
+Marks in Mathematics
+
+Marks in Science
+
+Create the following methods:
+
+calculate_total() – Calculate the total marks.
+
+calculate_percentage() – Calculate the percentage.
+
+display_result() – Display student details, total, and percentage.
+
+Expected output:
+
+Student Name: Ajay
+Roll Number: 101
+Total Marks: 240
+Percentage: 80.0%
+Assignment 2: Employee Salary Calculator
+
+A company wants to calculate an employee's gross salary.
+
+Create a class Employee with the following attributes:
+
+Employee ID
+
+Employee name
+
+Basic salary
+
+HRA percentage
+
+DA percentage
+
+Create the following methods:
+
+calculate_hra() – Calculate HRA.
+
+calculate_da() – Calculate DA.
+
+calculate_gross_salary() – Calculate gross salary.
+
+display_salary() – Display employee salary details.
+
+Formula:
+
+HRA = Basic Salary × HRA Percentage / 100
+DA = Basic Salary × DA Percentage / 100
+Gross Salary = Basic Salary + HRA + DA
+
+
+Assignment 3: Bank Account Operations
+ A bank wants to perform basic operations on a customer's account.
+
+Create a class BankAccount with the following attributes:
+
+Account number
+
+Account holder name
+
+Balance
+
+Create the following methods:
+
+deposit() – Add an amount to the balance.
+
+withdraw() – Subtract an amount from the balance.
+
+display_account() – Display account details and final balance.
+
+Sample data:
+
+Account Number: 1001
+Account Holder: Rahul
+Opening Balance: 25000
+Deposit: 5000
+Withdrawal: 3000
+
+Expected result:
+
+Final Balance: 27000
+
+
+Assignment 4: Rectangle Calculator
+
+ A civil engineer wants to calculate the area and perimeter of a rectangular plot.
+
+Create a class Rectangle with the following attributes:
+
+Length
+
+Breadth
+
+Create the following methods:
+
+calculate_area() – Calculate the area.
+
+calculate_perimeter() – Calculate the perimeter.
+
+display_result() – Display length, breadth, area, and perimeter.
+
+Formulas:
+
+Area = Length × Breadth
+Perimeter = 2 × (Length + Breadth)
+
+Sample data:
+
+Length: 15
+Breadth: 8
+
+
+Assignment 5: Shopping Bill Calculator
+
+ A retail shop wants to calculate the total bill for a customer.
+
+Create a class ShoppingBill with the following attributes:
+
+Product name
+
+Product price
+
+Quantity
+
+Discount percentage
+
+GST percentage
+
+Create the following methods:
+
+calculate_subtotal() – Calculate price × quantity.
+
+calculate_discount() – Calculate the discount amount.
+
+calculate_gst() – Calculate GST on the discounted amount.
+
+calculate_final_bill() – Calculate the final payable amount.
+
+display_bill() – Display the complete bill details.
+
+Formula:
+
+Subtotal = Price × Quantity
+Discounted Amount = Subtotal - Discount
+GST = Discounted Amount × GST Percentage / 100
+Final Bill = Discounted Amount + GST
+
+
+
+Assignment 6: Electricity Bill Calculator
+
+An electricity board wants to calculate a customer's electricity bill based on units consumed.
+
+Create a class ElectricityBill with the following attributes:
+
+Consumer number
+
+Consumer name
+
+Units consumed
+
+Rate per unit
+
+Fixed charge
+
+Create the following methods:
+
+calculate_energy_charge() – Calculate units × rate per unit.
+
+calculate_total_bill() – Add energy charge and fixed charge.
+
+display_bill() – Display consumer details and bill amount.
+
+Sample data:
+
+Consumer Number: 501
+Consumer Name: Amit
+Units Consumed: 250
+Rate Per Unit: 6
+Fixed Charge: 100
+
+Expected result:
+
+Energy Charge: 1500
+Total Bill: 1600
+
+
+Assignment 7: Mobile Phone Data Usage
+
+A mobile user wants to calculate their remaining internet data.
+
+Create a class MobilePlan with the following attributes:
+
+Customer name
+
+Mobile number
+
+Total data in GB
+
+Used data in GB
+
+Validity in days
+
+Create the following methods:
+
+calculate_remaining_data() – Calculate remaining data.
+
+calculate_usage_percentage() – Calculate the percentage of data used.
+
+display_plan() – Display the plan details and results.
+
+Sample data:
+
+Total Data: 50 GB
+Used Data: 18 GB
+Validity: 28 days
+
+Expected result:
+
+Remaining Data: 32 GB
+Usage Percentage: 36.0%
+
+Assignment 8: Car Mileage Calculator
+
+ A car owner wants to calculate the mileage and fuel cost of a journey.
+
+Create a class Car with the following attributes:
+
+Car brand
+
+Car model
+
+Distance travelled in km
+
+Fuel consumed in litres
+
+Petrol price per litre
+
+Create the following methods:
+
+calculate_mileage() – Calculate kilometres per litre.
+
+calculate_fuel_cost() – Calculate total fuel cost.
+
+display_trip_details() – Display car and journey details.
+
+Formulas:
+
+Mileage = Distance / Fuel Consumed
+Fuel Cost = Fuel Consumed × Petrol Price
+
+Sample data:
+
+Car Brand: Maruti
+Car Model: Swift
+Distance: 320 km
+Fuel Consumed: 20 litres
+Petrol Price: 105
+
+Assignment 9: Product Inventory Management
+
+A shopkeeper wants to manage the stock of a product.
+
+Create a class Product with the following attributes:
+
+Product ID
+
+Product name
+
+Price
+
+Available quantity
+
+Create the following methods:
+
+add_stock() – Increase the available quantity.
+
+sell_product() – Decrease the available quantity.
+
+calculate_stock_value() – Calculate price × available quantity.
+
+display_product() – Display product and stock details.
+
+Sample operations:
+
+Product Name: Laptop
+Price: 45000
+Initial Quantity: 10
+Add Stock: 5
+Sell Product: 3
+
+Expected result:
+
+Available Quantity: 12
+Total Stock Value: 540000
+
+
+
+Assignment 10: Personal Expense Calculator
+
+ A person wants to calculate monthly expenses and savings.
+
+Create a class ExpenseTracker with the following attributes:
+
+Person name
+
+Monthly salary
+
+Rent
+
+Food expenses
+
+Travel expenses
+
+Other expenses
+
+Create the following methods:
+
+calculate_total_expenses() – Calculate all expenses.
+
+calculate_savings() – Calculate salary minus total expenses.
+
+display_expense_report() – Display salary, expenses, and savings.
+
+Formula:
+
+Total Expenses = Rent + Food + Travel + Other Expenses
+Savings = Monthly Salary - Total Expenses
+
+Sample data:
+
+Monthly Salary: 60000
+Rent: 12000
+Food: 8000
+Travel: 5000
+Other Expenses: 3000
+
+Expected result:
+
+Total Expenses: 28000
+Savings: 32000

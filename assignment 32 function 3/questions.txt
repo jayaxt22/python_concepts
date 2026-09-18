@@ -1,0 +1,235 @@
+Assignment 1: Smart Street Lights (Fibonacci Series)
+
+A smart city installs street lights in a newly developed area. The number of lights installed each month follows the Fibonacci pattern.
+
+Month 1 → 0 lights
+Month 2 → 1 light
+Every following month, the number of lights installed is the sum of the previous two months.
+
+As a software developer, your task is to help the city planning department generate the installation schedule.
+
+Task
+
+Write a recursive function to print the first N Fibonacci numbers.
+
+Input
+Enter the number of months:
+7
+Output
+0 1 1 2 3 5 8
+Assignment 2: Binary Converter for Embedded System
+
+An embedded systems company develops microcontrollers that understand only binary values. Engineers enter decimal numbers, and the software must convert them into binary before sending them to the device.
+
+As a software developer, write a recursive program to perform this conversion.
+
+Task
+
+Write a recursive function to convert a decimal number into its binary representation.
+
+Input
+Enter a decimal number:
+25
+Output
+Binary Number = 11001
+
+Note: Do not use Python's built-in bin() function.
+
+Assignment 3: Security PIN Verification (Palindrome Number)
+
+A bank allows customers to choose a special PIN. For promotional purposes, the bank rewards customers whose PIN is a palindrome (reads the same from left to right and right to left).
+
+As a software developer, write a recursive program to verify whether the entered PIN is a palindrome.
+
+Task
+
+Write a recursive function to reverse the given number and determine whether it is a palindrome.
+
+Input 1
+Enter PIN:
+1221
+Output 1
+Palindrome Number
+Input 2
+Enter PIN:
+1234
+Output 2
+Not a Palindrome Number
+
+Assignment 4:
+ Lottery Ticket Verification (Count Occurrences Using Recursion)
+
+A lottery company assigns a unique ticket number to every participant. Before announcing the results, the company wants to determine how many times a lucky digit appears in a ticket number. This helps identify tickets eligible for special bonus rewards.
+
+As a software developer, your task is to write a recursive Python program that counts the number of times a given digit appears in the ticket number.
+
+Task
+
+Write a recursive function to count the occurrences of a given digit in a ticket number.
+
+Input Format
+The first line contains an integer representing the Ticket Number.
+The second line contains an integer representing the Lucky Digit.
+Output Format
+
+Display the number of times the lucky digit appears in the ticket number using the format:
+
+Digit <Lucky Digit> appears <Count> times.
+Sample Input
+Enter Ticket Number:
+1122334412
+
+Enter Lucky Digit:
+2
+Sample Output
+Digit 2 appears 3 times.
+Sample Input 2
+Enter Ticket Number:
+987654321
+
+Enter Lucky Digit:
+5
+Sample Output 2
+Digit 5 appears 1 time.
+Sample Input 3
+Enter Ticket Number:
+11111111
+
+Enter Lucky Digit:
+2
+Sample Output 3
+Digit 2 appears 0 times.
+
+===============
+1.
+Student Registration System – Longest Name
+
+A school is organizing an inter-school cultural event. During the registration process, the coordinator notices that some students have very long names, which may not fit properly on the printed ID cards.
+
+As a software developer, your task is to write a Python program that identifies the student with the longest name from the list of registered students using the reduce() function along with a lambda expression.
+
+Input
+students = ["Riya", "Christopher", "Aman", "Neha", "Siddharth"]
+Expected Output
+Student with the longest name: Christopher
+
+2.
+Hospital Management System – Oldest Patient
+
+A hospital wants to give priority to the oldest patient during a free health check-up camp. The patient details are stored as tuples containing the patient's name and age.
+
+As a Python developer, write a program to identify the oldest patient using the reduce() function with a lambda expression.
+
+Input
+patients = [
+    ("Rahul", 45),
+    ("Sneha", 62),
+    ("Amit", 38),
+    ("Kiran", 71),
+    ("Pooja", 55)
+]
+Expected Output
+Oldest Patient: Kiran
+
+3.
+Cricket Tournament – Highest Run Scorer
+
+A cricket academy wants to reward the player who scored the highest number of runs in a tournament.
+
+Write a Python program to identify the highest run scorer using reduce() and a lambda expression.
+
+Input
+players = [
+    ("Virat", 78),
+    ("Rohit", 102),
+    ("Gill", 89),
+    ("KL Rahul", 65),
+    ("Iyer", 91)
+]
+Expected Output
+Highest Run Scorer: Rohit
+
+4.
+Assignment 10: Cyber Security (Strong Password Check)
+
+A cybersecurity company considers a numeric password to be "strong" if every digit is even.
+
+Task
+
+Write a recursive function to check whether all digits of the given number are even.
+
+Input 1
+Enter Password:
+248620
+Output 1
+Strong Password
+Input 2
+Enter Password:
+248621
+Output 2
+Weak Password
+
+5.
+ Hospital Record System (Search Digit)
+
+
+A hospital stores patient IDs as numbers. The administrator wants to verify whether a specific digit exists in a patient ID.
+
+Task
+
+Write a recursive function to determine whether a given digit is present.
+
+Input
+Enter Patient ID:
+5837264
+
+Enter Digit:
+7
+Output
+Digit Found
+
+6.
+ Mobile Recharge System
+
+A telecom company issues lucky recharge coupons only if the coupon number is prime.
+
+Task
+
+Write a recursive function to determine whether a given number is prime.
+
+Input
+Enter Coupon Number:
+29
+Output
+Prime Number
+
+7.
+Assignment: File Compression System (String Compression)
+
+A file compression company wants to reduce the size of text files before storing them. One simple compression technique is to replace consecutive repeated characters with the character followed by its count.
+
+For example:
+
+AAABBCCCCD → A3B2C4D1
+
+As a software developer, your task is to write a recursive Python program to compress a given string.
+
+Task
+
+Write a recursive function that compresses a string by counting consecutive occurrences of each character.
+
+Input
+Enter a String:
+AAABBCCCCD
+Output
+Compressed String = A3B2C4D1
+Sample Input 2
+Enter a String:
+WWWWXXYYZ
+Sample Output 2
+Compressed String = W4X2Y2Z1
+Sample Input 3
+Enter a String:
+AAAAA
+Sample Output 3
+Compressed String = A5
