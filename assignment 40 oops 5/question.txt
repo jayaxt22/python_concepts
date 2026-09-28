@@ -1,0 +1,325 @@
+============================================================
+ASSIGNMENT 1 — EMPLOYEE MANAGEMENT SYSTEM
+=========================================
+
+SCENARIO:
+
+A company wants to maintain information about different types of employees.
+
+Create the following class hierarchy:
+
+Employee
+|
++-------- Developer
+|
++-------- Manager
+
+REQUIREMENTS:
+
+1. Create a parent class Employee.
+
+Employee should contain:
+
+* employee_id
+* employee_name
+* salary
+
+2. Create Developer and Manager classes that inherit from Employee.
+
+3. Employee should have a method:
+
+display_details()
+
+4. Developer should have:
+
+programming_language
+
+and a method:
+
+write_code()
+
+5. Manager should have:
+
+team_size
+
+and a method:
+
+manage_team()
+
+6. The child-class constructors must initialize parent-class data using super().
+
+7. Override display_details() in both child classes.
+
+8. From the overridden method, call the parent display_details() using super().
+
+9. salary must be encapsulated.
+
+Implement:
+
+@property
+@salary.setter
+@salary.deleter
+
+10. Salary setter must reject salary <= 0.
+
+11. Read ALL employee information from the user.
+
+INPUT REQUIREMENT:
+
+Ask the user:
+
+Enter Employee ID:
+Enter Employee Name:
+Enter Salary:
+Enter Employee Type:
+
+1. Developer
+2. Manager
+
+If Developer:
+
+Enter Programming Language:
+
+If Manager:
+
+Enter Team Size:
+
+SAMPLE INPUT:
+
+Enter Employee ID: 101
+Enter Employee Name: Rahul
+Enter Salary: 45000
+Enter Employee Type: 1
+Enter Programming Language: Python
+
+EXPECTED OUTPUT:
+
+## Employee Details
+
+Employee ID: 101
+Employee Name: Rahul
+Salary: 45000
+Role: Developer
+Programming Language: Python
+
+Rahul is developing applications using Python.
+
+============================================================
+
+
+
+ASSIGNMENT 2 — BANK ACCOUNT MANAGEMENT SYSTEM
+=============================================
+
+A bank provides different types of accounts.
+
+Create the following hierarchy:
+
+Account
+|
++-------- SavingsAccount
+|
++-------- PremiumSavingsAccount
+
+REQUIREMENTS:
+
+1. Create a parent class Account.
+
+Attributes:
+
+* account_number
+* customer_name
+* balance
+
+2. SavingsAccount should inherit from Account.
+
+Additional attribute:
+
+* interest_rate
+
+3. PremiumSavingsAccount should inherit from SavingsAccount.
+
+Additional attribute:
+
+* cashback_percentage
+
+4. Parent-class data must be initialized using super().
+
+5. Create the following methods:
+
+display_account()
+deposit()
+withdraw()
+
+6. Override display_account() in SavingsAccount.
+
+7. Override display_account() again in PremiumSavingsAccount.
+
+8. Each overridden method must call the parent method using super().
+
+9. Demonstrate multilevel inheritance.
+
+10. Balance must be encapsulated using:
+
+@property
+@balance.setter
+@balance.deleter
+
+11. Balance cannot be negative.
+
+12. Read all data from the user.
+
+INPUT:
+
+Enter Account Number:
+Enter Customer Name:
+Enter Initial Balance:
+Enter Account Type:
+
+1. Savings Account
+2. Premium Savings Account
+
+For Savings Account:
+
+Enter Interest Rate:
+
+For Premium Savings Account:
+
+Enter Interest Rate:
+Enter Cashback Percentage:
+
+Then ask:
+
+Enter amount to deposit:
+Enter amount to withdraw:
+
+SAMPLE INPUT:
+
+Enter Account Number: 1001
+Enter Customer Name: Amit
+Enter Initial Balance: 25000
+Enter Account Type: 2
+Enter Interest Rate: 7
+Enter Cashback Percentage: 2
+Enter amount to deposit: 5000
+Enter amount to withdraw: 3000
+
+EXPECTED OUTPUT:
+
+## Account Details
+
+Account Number: 1001
+Customer Name: Amit
+Balance: 25000
+
+Account Type: Premium Savings Account
+Interest Rate: 7%
+Cashback Percentage: 2%
+
+After Deposit:
+Balance: 30000
+
+After Withdrawal:
+Balance: 27000
+
+============================================================
+ASSIGNMENT 3 — VEHICLE RENTAL SYSTEM
+====================================
+
+
+A vehicle rental company rents different types of vehicles.
+
+Create:
+
+Vehicle
+|
++-------- Car
+|
++-------- Bike
+
+REQUIREMENTS:
+
+1. Create Vehicle class.
+
+Attributes:
+
+* vehicle_number
+* brand
+* rent_per_day
+
+2. Car should inherit from Vehicle.
+
+Additional:
+
+* number_of_seats
+
+3. Bike should inherit from Vehicle.
+
+Additional:
+
+* engine_cc
+
+4. Initialize parent data using super().
+
+5. Create:
+
+display_vehicle()
+calculate_rent(days)
+
+6. Override calculate_rent() in Car and Bike.
+
+7. The child methods must call the parent calculation using super().
+
+8. Use a property for rent_per_day.
+
+9. Create:
+
+@property
+@rent_per_day.setter
+@rent_per_day.deleter
+
+10. rent_per_day must be greater than 0.
+
+11. Read all information from the user.
+
+INPUT:
+
+Enter Vehicle Number:
+Enter Brand:
+Enter Rent Per Day:
+Enter Vehicle Type:
+
+1. Car
+2. Bike
+
+If Car:
+
+Enter Number of Seats:
+
+If Bike:
+
+Enter Engine CC:
+
+Enter Number of Rental Days:
+
+SAMPLE INPUT:
+
+Enter Vehicle Number: MP09AB1234
+Enter Brand: Hyundai
+Enter Rent Per Day: 1500
+Enter Vehicle Type: 1
+Enter Number of Seats: 5
+Enter Number of Rental Days: 4
+
+EXPECTED OUTPUT:
+
+## Vehicle Details
+
+Vehicle Number: MP09AB1234
+Brand: Hyundai
+Rent Per Day: 1500
+Vehicle Type: Car
+Number of Seats: 5
+
+Rental Days: 4
+Total Rent: 6000

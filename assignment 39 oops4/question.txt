@@ -1,0 +1,493 @@
+Create the following structure for every assignment:
+
+project/
+│
+├── models/
+│   ├── **init**.py
+│   └── class_module.py
+│
+└── main.py
+
+IMPORTANT RULES
+
+1. Create the class inside the `models` package.
+2. The class must be written in a separate module.
+3. Import the class into `main.py`.
+4. Create multiple objects of the class.
+5. Store all objects inside a list.
+6. Perform operations on the list of objects.
+7. Take input from the user wherever required.
+8. Do not use dictionaries in place of objects.
+9. Do not use database connectivity.
+10. Display the output in a proper format.
+
+============================================================
+ASSIGNMENT 1 – STUDENT MANAGEMENT SYSTEM
+========================================
+
+Create a `Student` class inside:
+
+models/student.py
+
+ATTRIBUTES:
+
+* roll_no
+* name
+* marks
+
+TASKS:
+
+1. Take details of 5 students from the user.
+2. Create a Student object for each student.
+3. Store all Student objects inside a list.
+4. Display all students.
+5. Display students whose marks are greater than 60.
+6. Find the student having the highest marks.
+7. Calculate the average marks of all students.
+
+SAMPLE INPUT:
+
+Enter Roll No: 101
+Enter Name: Amit
+Enter Marks: 78
+
+Enter Roll No: 102
+Enter Name: Rahul
+Enter Marks: 55
+
+Enter Roll No: 103
+Enter Name: Priya
+Enter Marks: 91
+
+Enter Roll No: 104
+Enter Name: Neha
+Enter Marks: 67
+
+Enter Roll No: 105
+Enter Name: Rohit
+Enter Marks: 45
+
+EXPECTED OUTPUT:
+
+All Students:
+101 Amit 78
+102 Rahul 55
+103 Priya 91
+104 Neha 67
+105 Rohit 45
+
+Students having marks greater than 60:
+101 Amit 78
+103 Priya 91
+104 Neha 67
+
+Highest Marks:
+103 Priya 91
+
+Average Marks:
+67.2
+
+============================================================
+ASSIGNMENT 2 – EMPLOYEE MANAGEMENT SYSTEM
+=========================================
+
+Create an `Employee` class inside:
+
+models/employee.py
+
+ATTRIBUTES:
+
+* employee_id
+* name
+* salary
+* department
+
+TASKS:
+
+1. Take details of 5 employees from the user.
+2. Create Employee objects.
+3. Store the objects inside a list.
+4. Display all employees.
+5. Display employees whose salary is greater than 40,000.
+6. Display employees who belong to the IT department.
+7. Find the employee having the highest salary.
+8. Calculate total salary of all employees.
+9. Calculate average salary.
+
+SAMPLE INPUT:
+
+101 Amit 45000 IT
+102 Rahul 35000 HR
+103 Priya 60000 IT
+104 Neha 50000 Finance
+105 Rohit 30000 HR
+
+EXPECTED OUTPUT:
+
+All Employees:
+101 Amit 45000 IT
+102 Rahul 35000 HR
+103 Priya 60000 IT
+104 Neha 50000 Finance
+105 Rohit 30000 HR
+
+Employees with salary greater than 40000:
+101 Amit 45000 IT
+103 Priya 60000 IT
+104 Neha 50000 Finance
+
+Employees from IT Department:
+101 Amit 45000 IT
+103 Priya 60000 IT
+
+Highest Salary Employee:
+103 Priya 60000 IT
+
+Total Salary:
+220000
+
+Average Salary:
+44000
+
+============================================================
+ASSIGNMENT 3 – PRODUCT INVENTORY SYSTEM
+=======================================
+
+Create a `Product` class inside:
+
+models/product.py
+
+ATTRIBUTES:
+
+* product_id
+* product_name
+* price
+* quantity
+
+TASKS:
+
+1. Take details of 5 products from the user.
+
+2. Create Product objects.
+
+3. Store all objects in a list.
+
+4. Display all products.
+
+5. Calculate total value of each product.
+
+   Total Value = Price × Quantity
+
+6. Display products whose quantity is less than 10.
+
+7. Find the product having the highest price.
+
+8. Calculate total inventory value.
+
+9. Search a product using Product Id.
+
+SAMPLE INPUT:
+
+101 Laptop 55000 5
+102 Mouse 800 25
+103 Keyboard 1500 12
+104 Monitor 12000 7
+105 Printer 9000 15
+
+EXPECTED OUTPUT:
+
+All Products:
+101 Laptop 55000 5
+102 Mouse 800 25
+103 Keyboard 1500 12
+104 Monitor 12000 7
+105 Printer 9000 15
+
+Product Total Values:
+Laptop = 275000
+Mouse = 20000
+Keyboard = 18000
+Monitor = 84000
+Printer = 135000
+
+Low Stock Products:
+Laptop
+Monitor
+
+Highest Price Product:
+Laptop = 55000
+
+Total Inventory Value:
+532000
+
+Search Product Id: 103
+
+Product Found:
+103 Keyboard 1500 12
+
+============================================================
+ASSIGNMENT 4 – BANK ACCOUNT SYSTEM
+==================================
+
+Create an `Account` class inside:
+
+models/account.py
+
+ATTRIBUTES:
+
+* account_no
+* customer_name
+* balance
+
+METHODS:
+
+* deposit()
+* withdraw()
+* display()
+
+TASKS:
+
+1. Create 5 Account objects.
+2. Store all Account objects in a list.
+3. Display all accounts.
+4. Search an account using Account Number.
+5. Deposit money into a selected account.
+6. Withdraw money from a selected account.
+7. Display accounts having balance greater than 50,000.
+8. Find the account having the highest balance.
+
+SAMPLE DATA:
+
+101 Amit 45000
+102 Rahul 75000
+103 Priya 35000
+104 Neha 90000
+105 Rohit 55000
+
+SAMPLE OPERATIONS:
+
+Enter Account No: 101
+
+Enter amount to deposit: 10000
+
+After Deposit:
+101 Amit 55000
+
+Enter Account No: 103
+
+Enter amount to withdraw: 5000
+
+After Withdrawal:
+103 Priya 30000
+
+EXPECTED OUTPUT:
+
+Accounts having balance greater than 50000:
+
+102 Rahul 75000
+104 Neha 90000
+105 Rohit 55000
+
+Highest Balance Account:
+
+104 Neha 90000
+
+============================================================
+ASSIGNMENT 5 – BOOK MANAGEMENT SYSTEM
+=====================================
+
+Create a `Book` class inside:
+
+models/book.py
+
+ATTRIBUTES:
+
+* book_id
+* book_name
+* author
+* price
+
+TASKS:
+
+1. Take details of 5 books from the user.
+2. Create Book objects.
+3. Store all Book objects in a list.
+4. Display all books.
+5. Search a book using Book Id.
+6. Display all books written by a particular author.
+7. Display books whose price is greater than 500.
+8. Find the most expensive book.
+9. Calculate average price of all books.
+
+SAMPLE INPUT:
+
+101 Java Programming James 650
+102 Python Basics Mark 550
+103 MySQL Guide John 450
+104 Advanced Java James 800
+105 DSA in Python Robert 700
+
+EXPECTED OUTPUT:
+
+All Books:
+101 Java Programming James 650
+102 Python Basics Mark 550
+103 MySQL Guide John 450
+104 Advanced Java James 800
+105 DSA in Python Robert 700
+
+Books by James:
+101 Java Programming 650
+104 Advanced Java 800
+
+Books with price greater than 500:
+Java Programming
+Python Basics
+Advanced Java
+DSA in Python
+
+Most Expensive Book:
+Advanced Java = 800
+
+Average Price:
+630
+
+============================================================
+ASSIGNMENT 6 – CUSTOMER MANAGEMENT SYSTEM
+=========================================
+
+Create a `Customer` class inside:
+
+models/customer.py
+
+ATTRIBUTES:
+
+* customer_id
+* customer_name
+* city
+* purchase_amount
+
+TASKS:
+
+1. Take details of 5 customers.
+2. Create Customer objects.
+3. Store all objects in a list.
+4. Display all customers.
+5. Display customers from a particular city.
+6. Display customers whose purchase amount is greater than 10,000.
+7. Find the customer having the highest purchase amount.
+8. Calculate total sales.
+9. Calculate average purchase amount.
+10. Search customer using Customer Id.
+
+SAMPLE DATA:
+
+101 Amit Indore 12000
+102 Rahul Bhopal 8000
+103 Priya Indore 15000
+104 Neha Pune 22000
+105 Rohit Indore 7000
+
+EXPECTED OUTPUT:
+
+Customers from Indore:
+
+101 Amit 12000
+103 Priya 15000
+105 Rohit 7000
+
+Customers with purchase amount greater than 10000:
+
+101 Amit 12000
+103 Priya 15000
+104 Neha 22000
+
+Highest Purchase Customer:
+
+104 Neha 22000
+
+Total Sales:
+
+64000
+
+Average Purchase Amount:
+
+12800
+
+Search Customer Id: 103
+
+Customer Found:
+
+103 Priya Indore 15000
+
+============================================================
+ASSIGNMENT 7 – MOVIE COLLECTION SYSTEM
+======================================
+
+Create a `Movie` class inside:
+
+models/movie.py
+
+ATTRIBUTES:
+
+* movie_id
+* movie_name
+* genre
+* rating
+* ticket_price
+
+TASKS:
+
+1. Take details of 5 movies from the user.
+2. Create Movie objects.
+3. Store all objects in a list.
+4. Display all movies.
+5. Display movies having rating greater than 8.
+6. Display all Action movies.
+7. Find the highest-rated movie.
+8. Search a movie using Movie Id.
+9. Calculate average movie rating.
+10. Display movies whose ticket price is greater than 300.
+
+SAMPLE DATA:
+
+101 Dangal Drama 8.4 250
+102 Jawan Action 7.5 300
+103 3Idiots Drama 8.4 200
+104 Bahubali Action 8.1 350
+105 Pathaan Action 7.0 320
+
+EXPECTED OUTPUT:
+
+Movies with rating greater than 8:
+
+Dangal 8.4
+3Idiots 8.4
+Bahubali 8.1
+
+Action Movies:
+
+Jawan
+Bahubali
+Pathaan
+
+Highest Rated Movie:
+
+Dangal 8.4
+
+Movies with ticket price greater than 300:
+
+Bahubali 350
+Pathaan 320
+
+Average Movie Rating:
+
+7.88
+
+Search Movie Id: 104
+
+Movie Found:
+
+104 Bahubali Action 8.1 350
+
+============================================================
